@@ -1,0 +1,140 @@
+<title>Marrakech Guide — confidentialité</title>
+<style>
+:root{
+  --bg:#FAF6F1;
+  --surface:#FFFFFF;
+  --text:#1A1A1A;
+  --text-secondary:#5B5650;
+  --accent:#520714;
+  --border:rgba(26,26,26,0.1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1A1412;
+    --surface:#241B18;
+    --text:#F5EDE4;
+    --text-secondary:#C9BEB4;
+    --accent:#E8A0AA;
+    --border:rgba(245,237,228,0.14);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1A1412;
+  --surface:#241B18;
+  --text:#F5EDE4;
+  --text-secondary:#C9BEB4;
+  --accent:#E8A0AA;
+  --border:rgba(245,237,228,0.14);
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Source Sans 3',system-ui,sans-serif;
+  padding-inline:20px;
+  padding-block:48px;
+  line-height:1.65;
+}
+.wrap{max-width:680px;margin:0 auto;}
+h1{
+  font-family:'Playfair Display',Georgia,serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:clamp(28px,6vw,40px);
+  color:var(--accent);
+  margin:0 0 4px;
+  text-wrap:balance;
+}
+.subtitle{color:var(--text-secondary);font-size:14px;margin:0 0 40px;}
+h2{
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:400;
+  font-size:20px;
+  margin:40px 0 12px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+}
+h2:first-of-type{border-top:none;padding-top:0;}
+p,li{font-size:15px;color:var(--text);}
+.muted{color:var(--text-secondary);}
+ul{padding-left:20px;margin:8px 0;}
+li{margin-bottom:6px;}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 20px;
+  margin:16px 0;
+}
+.contact{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--text-secondary);font-size:13px;}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Source+Sans+3:wght@400;600&display=swap">
+<div class="wrap">
+  <h1>Politique de confidentialité</h1>
+  <p class="subtitle">Marrakech Guide · Dernière mise à jour : octobre 2026</p>
+
+  <h2>Qui sommes-nous</h2>
+  <p>Marrakech Guide est une application de découverte de lieux à Marrakech (restaurants, riads, hammams, monuments, excursions…), éditée à titre individuel. Cette page explique quelles données l'application utilise et pourquoi.</p>
+
+  <h2>Localisation</h2>
+  <p>La fonctionnalité « Autour de moi » utilise votre position pour afficher les lieux les plus proches de vous.</p>
+  <ul>
+    <li>Votre position n'est utilisée qu'au moment où vous ouvrez cette fonctionnalité — elle n'est jamais enregistrée ni suivie en arrière-plan.</li>
+    <li>Elle n'est jamais transmise à un tiers ni associée à votre identité.</li>
+    <li>Vous pouvez refuser l'accès à la localisation : l'application reste utilisable, en utilisant le centre-ville de Marrakech comme point de référence par défaut.</li>
+  </ul>
+
+  <h2>Compte et connexion</h2>
+  <p>L'application ne demande aucune création de compte, aucune adresse email, aucun mot de passe pour être utilisée. Il n'y a pas de connexion via Google, Facebook ou Apple.</p>
+
+  <h2>Formulaire « Espace pro »</h2>
+  <p>Si vous gérez un établissement et utilisez le formulaire de contact de l'espace professionnel, les informations suivantes sont collectées :</p>
+  <ul>
+    <li>Nom de l'établissement</li>
+    <li>Nom, email et téléphone de la personne qui soumet la demande</li>
+    <li>Le message éventuellement associé</li>
+  </ul>
+  <p>Ces informations servent uniquement à vous recontacter au sujet de votre demande. Elles ne sont jamais revendues ni utilisées à des fins publicitaires.</p>
+
+  <h2>Avis et suggestions</h2>
+  <p>Vous pouvez laisser un avis sur un lieu (une note de 1 à 5 et un commentaire facultatif) ou nous suggérer une correction ou un nouveau lieu (un message et, si vous le souhaitez, un moyen de vous contacter).</p>
+  <ul>
+    <li>Aucun compte ni nom n'est demandé : un avis est publié sans nom, avec la note, le commentaire, le lieu concerné et la date.</li>
+    <li>Un avis publié est visible par les autres utilisateurs sur la fiche du lieu. Merci de ne pas y mettre d'informations personnelles.</li>
+    <li>Les suggestions ne sont pas publiées. Si vous indiquez un contact, il ne sert qu'à vous répondre.</li>
+  </ul>
+
+  <h2>Statistiques d'usage anonymes</h2>
+  <p>Quand vous touchez « Appeler », « WhatsApp » ou « Site web » sur la fiche d'un lieu, l'application enregistre le lieu concerné et le type d'action. Aucun identifiant de votre appareil ni aucune donnée personnelle n'est associé à cette information. Elle sert uniquement à savoir quels lieux sont consultés. Comme tout service en ligne, notre hébergeur peut enregistrer techniquement l'adresse IP des connexions, pour assurer la sécurité du service.</p>
+
+  <h2>Météo et cartes</h2>
+  <p>L'application affiche la météo de Marrakech en interrogeant le service gratuit Open-Meteo avec les coordonnées du centre-ville, pas avec votre position. L'affichage des cartes utilise le service de cartographie de votre téléphone.</p>
+
+  <h2>Favoris, hébergement et préférences</h2>
+  <p>Vos favoris, l'hébergement que vous choisissez d'enregistrer (nom, adresse, position) et vos préférences de séjour (durée, nombre de personnes) sont stockés uniquement sur votre appareil. Ils ne sont pas envoyés à nos serveurs ni partagés.</p>
+  <p>Pour fonctionner sans réseau, l'application garde aussi sur votre appareil une copie des lieux que vous avez déjà consultés.</p>
+
+  <h2>Hébergement des données</h2>
+  <p>Les données affichées dans l'application (lieux, photos, descriptions) sont hébergées via <strong>Supabase</strong> et <strong>Cloudflare</strong>, utilisés comme sous-traitants techniques. Aucune donnée personnelle vous concernant n'est partagée avec ces prestataires au-delà de ce qui est strictement nécessaire au fonctionnement technique du service.</p>
+
+  <h2>Public visé</h2>
+  <p>L'application s'adresse à un public général et n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données concernant des mineurs.</p>
+
+  <h2>Vos droits</h2>
+  <p>Vous pouvez à tout moment nous demander de supprimer les informations que vous nous avez transmises : formulaire « Espace pro », suggestions ou avis, en nous contactant à l'adresse ci-dessous. Pour un avis, indiquez le lieu, la date approximative et le texte, afin que nous puissions le retrouver, car les avis ne sont pas liés à une personne.</p>
+
+  <div class="card">
+    <div class="contact"><span class="dot" aria-hidden="true"></span>yenkel@gmail.com</div>
+  </div>
+
+  <h2 style="font-style:italic">English summary</h2>
+  <p>Marrakech Guide does not require account creation. Location is used only on-demand to show nearby places and is never stored or tracked in the background. The "Pro" contact form collects a name, email, phone number and message solely to respond to business inquiries — this data is never sold or used for advertising. Reviews (a 1–5 rating and an optional comment) and suggestions are sent without any name or account; published reviews appear anonymously on the place's page. When you tap Call, WhatsApp or Website on a place, the app records which place and which action, with no personal identifier. Weather is fetched from Open-Meteo using the city-centre coordinates, not your location. Favorites, the accommodation you choose to save and trip preferences are stored locally on your device only, along with a copy of the places you viewed so the app works offline. Place data is served via Supabase and Cloudflare as technical processors. The app is not directed at children under 13. Contact: yenkel@gmail.com</p>
+
+  <footer>Cette politique peut être mise à jour ; la date ci-dessus reflète la dernière version.</footer>
+</div>
